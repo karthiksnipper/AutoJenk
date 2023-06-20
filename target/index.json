@@ -1,0 +1,115 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-19T08:51:49.593Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7379983000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verifying Adactin Hotel login valid",
+        "description": "",
+        "id": "verifying-adactin-hotel-login-details;verifying-adactin-hotel-login-valid;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 157001800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2899300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the adactin page",
+            "match": {
+              "location": "TC1_LoginStep.user_is_on_the_adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2067616700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User perform login \"TamilSiva5674\",\"Tamil@5674\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TamilSiva5674\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Tamil@5674\"",
+                  "offset": 35
+                }
+              ],
+              "location": "TC1_LoginStep.user_perform_login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50778900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should verify after login success message \"Hello TamilSiva5674!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello TamilSiva5674!\"",
+                  "offset": 47
+                }
+              ],
+              "location": "CommonStep.user_should_verify_after_login_success_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin Hotel login details",
+    "description": "",
+    "id": "verifying-adactin-hotel-login-details",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC1_Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
